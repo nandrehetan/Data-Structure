@@ -1,0 +1,18 @@
+#include <stdio.h>
+#define MAX_FROGS 3
+
+struct frog
+{
+    int num_eyes;
+    int num_legs;
+}
+…
+int main (void)
+{
+    struct frog frogs_array[MAX_FROGS];
+
+    build_frogs(frogs_array, 3); //Pass address of struct
+    print_frogs(frogs_array, 3);
+
+    return EXIT_SUCCESS;
+}
